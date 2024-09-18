@@ -1,0 +1,108 @@
+<html lang="en"></html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+  </head>
+  <body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
+    <section>
+        <div>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+        </div>
+        <div>
+            <ul>
+                <li>Kenno Kallastu</li>
+                <li> 18.09.2024</li>
+                <li> Computer Engineering </li>
+            </ul>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </section>
+    <section>
+        <h1>Courses</h1>
+
+        <!-- form -->
+
+        <form>
+            <div>
+                <label for="name">Course title:</label>
+            </div>
+            <div>
+                <input type="text" id="name" name="name">
+            </div>
+            <label for="semester">Semester:</label><br>
+            <select id="semester" name="semester">
+              <option value="fall">Fall</option>
+              <option value="spring">Spring</option>
+            </select>
+            <br>
+            <b>Attendance:</b>
+            <div>
+                <label>
+                    <input type="radio" name="choice" value="virtual">
+                    Virtual attendance
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="choice" value="physical">
+                    Physical attendance
+                </label>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+
+
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Course Title</th>
+                <th>Semester</th>
+                <th>Grade</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><a href="https://courses.cs.ut.ee/2024/os/fall">Operating systems</a></td>
+                <td>fall</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="https://courses.cs.ut.ee/2024/VT1/fall"> Network technology </a></td>
+                <td>fall</td>
+                <td>85</td>
+            </tr>
+            </tbody>
+
+            <br>
+
+            <tfoot>
+                <tr>
+                    <td>Footer</td>
+                </tr>
+
+
+
+            </tfoot>
+        </table>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
+            </li>
+            <li>
+                <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+            </li>
+        </ul>
+    </footer>
+  </body>
+</html>
